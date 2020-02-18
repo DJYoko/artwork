@@ -1,78 +1,108 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
-  <head>
-    <title>artwork</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <h1>artwork</h1>
-      <p>my graphic products.</p>
 
-      <div class="row">
-        <div class="col">
-            <div class="thumb" data-toggle="modal" data-target="#img01" style="background-image:url('img/20200320weaves/facebook_x2.jpg');">
-            <img src="img/spacer.png" />
-            </div>
-        </div>
-        <div class="col">
-            <div class="thumb" style="background-image:url('img/20200320weaves/flyer_2048.jpg');">
-            <img src="img/spacer.png" />
-            </div>
-        </div>
-        <div class="col">
-            <div class="thumb" style="background-image:url('img/20200320weaves/instagram_square.jpg');">
-            <img src="img/spacer.png" />
-            </div>
+<head>
+  <title>artwork</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <p><a href="https://github.com/DJYoko/artwork">back</a></p>
+    <h1>artwork</h1>
+    <p>my graphic products.</p>
+    <p>Tools: Adobe Illustrator, Photoshop, Fireworks</p>
+
+    <div class="row">
+      <div class="col-xs-4">
+        <div class="thumb" data-toggle="modal" data-target="#facebook_x2"
+          style="background-image:url('img/20200320weaves/facebook_x2_thumb.jpg');">
+          <img src="img/spacer.png" />
         </div>
       </div>
-
-      <div class="modal fade" id="img01" role="dialog">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-           
-            <div class="modal-body">
-              <img class="zoom" src="img/20200320weaves/facebook_x2.jpg">
-            </div>
-           
-          </div>
+      <div class="col-xs-4">
+        <div class="thumb" data-toggle="modal" data-target="#flyer_2048"
+          style="background-image:url('img/20200320weaves/flyer_2048_thumb.jpg');">
+          <img src="img/spacer.png" />
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="thumb" data-toggle="modal" data-target="#instagram_square"
+          style="background-image:url('img/20200320weaves/instagram_square_thumb.jpg');">
+          <img src="img/spacer.png" />
         </div>
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
-  <style>
-      img{
-          max-width: 100%;
-          display: block;
-      }
-      body{
-          background: #f2f2f2;
-          color:#262626;
-      }
-    .thumb{
-        width: 100%;
-        display: block;
-        margin: 0;
-        background-size:contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-color: #dcdcdc;
-        cursor: pointer;
-        transition: opacity ease-out 200ms;
-    }
-    .thumb:hover{
-        opacity: 0.9;
-    }
-      .thumb img{
-          width: 100%;
-          display: block;
-          margin: 0;
-      }
-  </style>
+
+  </div>
+  <div class="modal fade" id="facebook_x2">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img class="zoom" src="img/20200320weaves/facebook_x2.jpg">
+          <p class="description">Facebook Cover img</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="flyer_2048">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img class="zoom" src="img/20200320weaves/flyer_2048.jpg">
+          <p class="description">Print A2</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="instagram_square">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img class="zoom" src="img/20200320weaves/instagram_square.jpg">
+          <p class="description">Instagram</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+  </script>
+</body>
+<style>
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  body {
+    background: #f2f2f2;
+    color: #262626;
+  }
+
+  .thumb {
+    width: 100%;
+    display: block;
+    margin: 0;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #dcdcdc;
+    cursor: pointer;
+    transition: opacity ease-out 200ms;
+  }
+
+  .thumb:hover {
+    opacity: 0.9;
+  }
+
+  .thumb img {
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
+</style>
+
 </html>
