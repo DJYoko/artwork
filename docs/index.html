@@ -1,12 +1,78 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ja">
   <head>
     <title>artwork</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <div class="container">
-        <h1>artwork</h1>
-        <p>my graphic products.</p>
+      <h1>artwork</h1>
+      <p>my graphic products.</p>
+
+      <div class="row">
+        <div class="col">
+            <div class="thumb" data-toggle="modal" data-target="#img01" style="background-image:url('img/20200320weaves/facebook_x2.jpg');">
+            <img src="img/spacer.png" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="thumb" style="background-image:url('img/20200320weaves/flyer_2048.jpg');">
+            <img src="img/spacer.png" />
+            </div>
+        </div>
+        <div class="col">
+            <div class="thumb" style="background-image:url('img/20200320weaves/instagram_square.jpg');">
+            <img src="img/spacer.png" />
+            </div>
+        </div>
       </div>
+
+      <div class="modal fade" id="img01" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+           
+            <div class="modal-body">
+              <img class="zoom" src="img/20200320weaves/facebook_x2.jpg">
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
+  <style>
+      img{
+          max-width: 100%;
+          display: block;
+      }
+      body{
+          background: #f2f2f2;
+          color:#262626;
+      }
+    .thumb{
+        width: 100%;
+        display: block;
+        margin: 0;
+        background-size:contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #dcdcdc;
+        cursor: pointer;
+        transition: opacity ease-out 200ms;
+    }
+    .thumb:hover{
+        opacity: 0.9;
+    }
+      .thumb img{
+          width: 100%;
+          display: block;
+          margin: 0;
+      }
+  </style>
 </html>
